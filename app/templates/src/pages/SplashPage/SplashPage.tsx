@@ -8,23 +8,23 @@ import { ACTIONS } from './Actions';
 import { iActionType, Translation } from '../../models/models';
 
 
-export interface HomePageProps extends ReactRedux.DispatchProp<any>{
+export interface SplashPageProps extends ReactRedux.DispatchProp<any>{
     className?:string;
     locale:Translation;
 }
 
-const INIT_STATE:HomePageState = {
+const INIT_STATE:SplashPageState = {
 
 }
 
-export interface HomePageState{
+export interface SplashPageState{
 
 }
 
 
-export class HomePage extends React.Component<HomePageProps, HomePageState>{
+export class SplashPage extends React.Component<SplashPageProps, SplashPageState>{
 
-    constructor(props:HomePageProps){
+    constructor(props:SplashPageProps){
         super(props); 
         this.state = INIT_STATE; 
     }
@@ -32,10 +32,11 @@ export class HomePage extends React.Component<HomePageProps, HomePageState>{
     render(){
         let cls = this.props.className || "";
         return (
-            <div className={"home-page " + cls}>
+            <div className={"splash-page " + cls}>
                 <div className="row">
-                    <div className="col s12 m12 l12">
-                        <h1>Studio Generator</h1>
+                    <div className="col s12 m12 l12 center">
+                        <img className="splash-page__image" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt=""/>
+                        <h1>React Studio</h1>
                     </div>
                 </div>
             </div>
@@ -46,7 +47,7 @@ export class HomePage extends React.Component<HomePageProps, HomePageState>{
 
 
 
-const mapStateToProps = (state: IStoreState, ownProps):Partial<HomePageProps> =>{
+const mapStateToProps = (state: IStoreState, ownProps):Partial<SplashPageProps> =>{
     return {
         locale:state.app.locale
     }
@@ -55,4 +56,4 @@ const mapStateToProps = (state: IStoreState, ownProps):Partial<HomePageProps> =>
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
   }, dispatch);
 
-export default connect(mapStateToProps,mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps,mapDispatchToProps)(SplashPage);

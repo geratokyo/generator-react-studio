@@ -1,6 +1,6 @@
-#__Studio Template Generator__
+# __Studio Template Generator__
 
-##Getting started
+## Getting started
 
 install Yeoman and generator-studio globally
 
@@ -10,11 +10,11 @@ npm install generator-studio -g
 ```
 
 
-##How it works
+## How it works
 
 To create the project template run the following
 
-##studio
+## studio
 ```
 
 yo studio {AppName}
@@ -22,7 +22,7 @@ yo studio {AppName}
 ```
 Where {AppName} is the name of the application
 
-###Flags
+### Flags
 ```
 --is-story  // specifies that the project 
             // will include storybook libs 
@@ -37,7 +37,7 @@ Where {AppName} is the name of the application
                     // generating the project
 ```
 
-##Controller
+## Controller
 To create a controller run the following 
 
 ```
@@ -45,7 +45,7 @@ yo studio:ctrl {CtrlName}
 ```
 Where {CtrlName} is the name of the controller
 
-##Page
+## Page
 To create a page run the following 
 
 ```
@@ -53,12 +53,12 @@ yo studio:page {PageName}
 ```
 Where {PageName} is the name of the page
 
-###Flags
+### Flags
 ```
 --add-reducer // this flag will also create a file Reducer.ts
 ```
 
-##UI Component
+## UI Component
 To create a ui component run the following 
 
 ```
@@ -66,14 +66,14 @@ yo studio:ui {UiName}
 ```
 Where {UiName} is the name of the ui component
 
-###Flags
+### Flags
 ```
 --folder {folderName}   // specify a folder name 
                         // under under components for files to be generated
                         // default value "ui"
 ```
 
-##Presentation Component (Functional component)
+## Presentation Component (Functional component)
 To create a ui component run the following 
 
 ```
@@ -81,14 +81,14 @@ yo studio:pr {PrName}
 ```
 Where {PrName} is the name of the functional component
 
-###Flags
+### Flags
 ```
 --folder {folderName}   // specify a folder name 
                         // under under components for files to be generated
                         // default value "ui"
 ```
 
-##Higher Order Component
+## Higher Order Component
 To create a higher order component run the following 
 
 ```
@@ -96,14 +96,14 @@ yo studio:hoc {PrName}
 ```
 Where {PrName} is the name of the functional component
 
-###Flags
+### Flags
 ```
 --folder {folderName}   // specify a folder name 
                         // under under components for files to be generated
                         // default value "ui"
 ```
 
-##Model Script
+## Model Script
 To create a model scafolding template run the following 
 
 ```

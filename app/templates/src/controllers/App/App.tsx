@@ -13,9 +13,7 @@ import {
     Redirect
 } from 'react-router-dom'
 
-import HomePage from '../../pages/Homepage/Homepage';
-import DATA_SERVICE from '../../services/DataService';
-import FullPage from '../../pages/FullPage/FullPage';
+import SplashPage from '../../pages/Splashpage/Splashpage';
 
 export const STATE_KEY = 'app';
 
@@ -26,14 +24,6 @@ class App extends React.Component<AppProps, inAppState>{
     }
 
     componentDidMount(){
-        if(DATA_SERVICE.isDataLoaded){
-            
-            this.props.loadData(DATA_SERVICE.getData()); 
-        }else{
-            DATA_SERVICE.load().then((e)=>{
-                this.props.loadData(e); 
-            })
-        }
     }
 
     render() {
@@ -43,8 +33,7 @@ class App extends React.Component<AppProps, inAppState>{
             <div className={`app`}>
                 <Router hashType="noslash">
                     <Switch>
-                        <Route exact path="/" component={HomePage} />
-                        <Route exact path="/full-content" component={FullPage} />
+                        <Route exact path="/" component={SplashPage} />
                     </Switch>
                 </Router>
             </div>
