@@ -6,7 +6,7 @@ install Yeoman and generator-studio globally
 
 ```
 npm install yo -g
-npm install generator-studio -g
+npm install generator-react-studio -g
 ```
 
 
@@ -17,7 +17,7 @@ To create the project template run the following
 ## studio
 ```
 
-yo studio {AppName}
+yo react-studio {AppName}
 
 ```
 Where {AppName} is the name of the application

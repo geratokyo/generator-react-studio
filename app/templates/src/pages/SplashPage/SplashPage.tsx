@@ -4,13 +4,10 @@ import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
   
 import { IStoreState } from '../../_reducers';
-import { ACTIONS } from './Actions';
-import { iActionType, Translation } from '../../models/models';
 
 
 export interface SplashPageProps extends ReactRedux.DispatchProp<any>{
     className?:string;
-    locale:Translation;
 }
 
 const INIT_STATE:SplashPageState = {
@@ -49,7 +46,6 @@ export class SplashPage extends React.Component<SplashPageProps, SplashPageState
 
 const mapStateToProps = (state: IStoreState, ownProps):Partial<SplashPageProps> =>{
     return {
-        locale:state.app.locale
     }
 }
 

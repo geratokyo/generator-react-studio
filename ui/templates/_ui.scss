@@ -34,12 +34,6 @@
     }
 }
 
-@include OnEmbedDevice(){
-    .<%= kebabCName %>{
-
-    }
-}
-
 
 /*************************/
 /////// CUSTOM CODE /////// 

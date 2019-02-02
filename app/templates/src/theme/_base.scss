@@ -41,25 +41,3 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
-
-
-@include OnEmbedDevice{
-    .hide-on-embed, 
-    %hide-on-embed{
-        display: none!important;
-    }
-}
-
-@include OnMobileDevice{
-    .hide-on-mobile, 
-    %hide-on-mobile{
-        display: none!important;
-    }
-}
-
-@include OnMobileLandscape{
-    .hide-on-mobile-landscape, 
-    %hide-on-mobile-landscape{
-        display: none!important;
-    }
-}

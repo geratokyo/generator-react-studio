@@ -12,7 +12,6 @@ import {
 import App from './controllers/App/App';
 import { RootReducer } from './_reducers';
 import {RES_URL} from "./config";
-import {IS_MOBILE,IS_EMBED} from './config'
 import "./main.scss";
 
 const enhancers = compose(
@@ -27,12 +26,6 @@ declare var process : {
 
 (function () {
 
-    if(IS_MOBILE) {
-        document.querySelector("body").classList.add("mobile");
-    }
-    if(IS_EMBED) {
-        document.querySelector("body").classList.add("embed");
-    }
     if (typeof document !== "undefined") {
         ReactDOM.render(
             <Provider store={store}>

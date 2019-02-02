@@ -27,21 +27,11 @@ export const DEV_URL = "";
 
 
 /**
- * Url for when the campaign is on verve server
- */
-export const VERVE_URL = "";
-
-/**
  * 
  * Url for when the campaign goes live 
  * Final client Url
  */
 export const PUBLIC_URL = "";
-
-/**
- * If website is embed on another website
- */
-export const IS_EMBED = (location.href.indexOf("/embed") !== -1);
 
 
 /**

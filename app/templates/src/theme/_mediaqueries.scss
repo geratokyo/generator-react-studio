@@ -16,32 +16,3 @@
         @content;
     }
 }
-
-@mixin OnMobileDevice() {
-    .mobile{
-        @content;
-    }
-}
-
-@mixin OnEmbedDevice(){
-    .embed{
-        @content;
-    }
-}
-
-
-@mixin OnMobileLandscape(){
-    .mobile{
-        @media(orientation: landscape){
-            @content;
-        }
-    }
-}
-
-@mixin OnMobilePortrait(){
-    .mobile{
-        @media(orientation: portrait){
-            @content;
-        }
-    }
-}
