@@ -2,16 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { createStore,compose } from 'redux';
 import { Provider } from 'react-redux';
-import * as Process from 'process'; 
-import {
-    HashRouter as Router,
-    Route,
-    Link,
-    Switch
-} from 'react-router-dom'
 import App from './controllers/App/App';
 import { RootReducer } from './_reducers';
-import {RES_URL} from "./config";
 import "./main.scss";
 
 const enhancers = compose(

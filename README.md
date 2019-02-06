@@ -110,3 +110,11 @@ To create a model scafolding template run the following
 yo studio:model {ModelName}
 ```
 Where {ModelName} is the name of the model
+
+
+
+## Links
+
+* [Details](https://roobley.com/details-react-studio-generator)
+* [Tutorial](https://roobley.com/getting-started-with-react-studio-generator)
+* [github.com](https://github.com/geratokyo/generator-react-studio)
